@@ -29,6 +29,4 @@ public class EmployeeSort
 	{
 		return EmployeeDao.getEmployees().stream().sorted(Comparator.comparing(Employee::getSalary).reversed()).skip(1).toList().get(0);
 	}
-	
-	
 }
